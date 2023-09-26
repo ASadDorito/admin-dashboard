@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: 
+        'sidebar header'
+        'sidebar content';
+}
+/* main sections*/
+.sidebar {
+    background-color: aqua;
+}
+
+.header {
+    background-color: lightgray;
+}
+
+.content {
+    background-color: white;
+}
+
+/* sidebar stuff*/
+.branding {
+    align-self: center;
+}
+
+
+.navigation {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows:repeat(10, 50px);
+}
+
+.navigation div {
+    padding-left: 5px;
+}
