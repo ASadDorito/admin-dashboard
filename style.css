@@ -53,7 +53,8 @@ body {
 
 /* sidebar stuff*/
 .branding {
-    align-self: center;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -65,6 +66,10 @@ body {
 
 .navigation div {
     padding-left: 5px;
+}
+
+.text{
+    margin-top: 10px;
 }
 
 /* header stuff*/
@@ -114,6 +119,10 @@ body {
     border-radius: 10px;
 }
 
+.navigation .text{
+    font-size: 16px;
+    margin-top: 15px;
+}
 /*content stuff*/
 .project{
     grid-row: 1 / 3;
