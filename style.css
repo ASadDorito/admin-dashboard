@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+:root{
+    --pic1: url(https://i.redd.it/v0caqchbtn741.jpg)
+}
+
 html {
     box-sizing: border-box 
  }
@@ -5,6 +12,7 @@ html {
 body {
     height: 100vh;
     display: grid;
+    font-family: 'Roboto', sans-serif;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 150px 1fr;
     grid-template-areas: 
@@ -12,7 +20,11 @@ body {
         'sidebar content';
 }
 
-
+.clear{
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+}
 /* main sections*/
 .sidebar {
     background-color: aqua;
@@ -70,15 +82,36 @@ body {
 
 .profile{
     display: flex;  
+    flex-direction: row;
 }
 
+.picture{
+    background: var(--pic1) center center / cover no-repeat;
+}
+
+.profile .picture{
+    width: 50px;
+    height: 50px;
+}
 .greeting{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 75px 1fr;
 }
 
+.greeting .picture{
+    width: 75px;
+    height: 75px;
+}
 .sharing{
     display: flex;
+    margin: 30px 10px;
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 10px;
 }
 
 /*content stuff*/
@@ -119,4 +152,8 @@ body {
 .trending .card{
     display: grid;
     grid-template-rows: 40px 40px 40px 40px;
+}
+
+span {
+    padding: 10px 10px;
 }

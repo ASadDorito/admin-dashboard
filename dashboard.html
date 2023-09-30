@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -16,24 +18,27 @@
 <!--header-->
     <div class="header">
         <div class="searchbar">
-            <label for="search">Search:</label>
+            <label for="search">
+                <span class="material-symbols-outlined">search</span>
+            </label>
             <input class="search" type="text">
         </div>
         
         <div class="profile">
-            <button>bell</button>
-            <p>img</p>
+            <button class="clear"><span class="material-symbols-outlined">notifications</span></button>
+            <div class="picture"></div>
             <p>John Smith</p>
         </div>
 
         <div class="greeting">
-            <p>Hi there,</p>
-            <p>Jimothy Dastardly</p>
+            <div class="picture"></div>
+            <p>Hi there, Jimothy Dastardly</p>
+            
         </div>
         <div class="sharing">
-            <button>New</button>
-            <button> Upload</button>
-            <button>Share</button>
+            <button class="btn">New</button>
+            <button class="btn"> Upload</button>
+            <button class="btn">Share</button>
         </div>
     </div>
 <!--bottom sidebar-->
